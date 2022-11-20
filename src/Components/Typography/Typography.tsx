@@ -1,6 +1,5 @@
 import React, {  ElementType, PropsWithChildren } from 'react';
 import IClassNameProp from '../../interfaces/IClassNameProp';
-import IObservedProps from '../../interfaces/IObservedProps';
 import cssStyles from './Typography.css';
 
 type TTypographyVariants = 'body1'|'body2'|'subtitle1'|'subtitle2'|'h1'|'h2'|'h3'|'h4'|'h5'|'h6';
@@ -12,9 +11,10 @@ interface ITypographyProps {
     variant?: TTypographyVariants,
     component?: ElementType<any>,
     gutterBottom?: boolean,
+    onClick?: (event: MouseEvent) => void,
 };
 
-const Typography: React.FC<PropsWithChildren&ITypographyProps&IClassNameProp&IObservedProps> = props => {
+const Typography: React.FC<PropsWithChildren&ITypographyProps&IClassNameProp> = props => {
 
     /**
      * function that checks wich HTML tag should be rendered, depending on the props passed to typography.
@@ -49,7 +49,6 @@ const Typography: React.FC<PropsWithChildren&ITypographyProps&IClassNameProp&IOb
 
     return(
         <Variant
-            ref={props.oRef}
             className={props.className}
             css={[
                 // Variant defaults to body1
@@ -58,6 +57,7 @@ const Typography: React.FC<PropsWithChildren&ITypographyProps&IClassNameProp&IOb
                 props.align && { textAlign: props.align },
                 props.gutterBottom && { paddingBottom: '0.85em', }
             ]}
+            onClick={props.onClick}
         >
             {props.children}
         </Variant>

@@ -49,12 +49,14 @@ declare module '@emotion/react'{
             link: string,
             background: string,
             error: string,
+            success: string,
             warning: string,
             text: {
                 primary: string,
                 secondary: string,
                 contrast: string,
             },
+            divider: string,
         },
     }
 }

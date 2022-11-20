@@ -10,6 +10,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import Homepage from './Components/Pages/HomePage';
 import useAppStore from './store/store';
 import ThemedGlobal from './ThemedGlobal/ThemedGlobal';
+import Formation from './Components/Pages/Formation/Formation';
 
 function App() {
   const isDarkTheme = useAppStore((state)=>state.isDarkTheme);
@@ -20,8 +21,9 @@ function App() {
           <ThemedGlobal/>
             <Navbar/>
             <Routes>
-              <Route path='/accueil' element={<Homepage/>}/>
-              <Route path='' element={<Navigate to='/accueil' />}/>
+              <Route path='/accueil' element={<Homepage/>} />
+              <Route path='' element={<Navigate to='/accueil' />} />
+              <Route path='/formation' element={<Formation/>} />
             </Routes>
       </ThemeProvider>
     </div>

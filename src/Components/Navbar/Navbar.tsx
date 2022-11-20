@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
       <div css={{ display: 'flex', alignItems: 'center'}}>
         <ThemeToggle css={(theme: Theme) => ({ marginRight: theme.spacing(4), paddingTop: theme.spacing(1) })}/>
         <Navlink destination='accueil' />
-        <Navlink destination='a propos' />
+        <Navlink destination='Formation' />
         <Navlink destination='projets' />
         <Navlink destination='structure' />
         <Navlink destination='contact' />

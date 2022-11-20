@@ -50,11 +50,13 @@ const defaultTheme : Theme = {
         background : 'whitesmoke',
         error: colors.redDark.red9,
         warning: '#f7c74a',
+        success: '#3D8B2D',
         text: {
             primary: 'rgba(0, 0, 0, 0.84)',
             secondary: 'rgba(0, 0, 0, 0.75)',
             contrast: 'white',
         },
+        divider: 'rgba(0, 0, 0, 0.08)',
     },
 };
 
@@ -72,11 +74,14 @@ export const darkTheme = {
         background : '#282b30',
         error: colors.redDark.red9,
         warning: '#f7c74a',
+        success: '#82D173',
         text: {
             primary: 'white',
             secondary: 'whitesmoke',
             contrast: 'grey',
         },
+        divider: 'rgba(255, 255, 255, 0.08)',
+
     },
 }
 

@@ -1,6 +1,17 @@
 import { css, Theme } from '@emotion/react';
 
 const __reset = (theme: Theme) => css({
+    /* Overwrite the default to keep the scrollbar always visible */
+
+    WebkitScrollbar:  {
+        WebkitAppearance: 'none',
+        width: 7,
+    },
+    WebkitScrollbarThumb: {
+        borderRadius: 4,
+        backgroundColor: 'rgba(0,0,0,.5)',
+        WebkitBoxShadow: '0 0 1px rgba(255,255,255,.5)',
+    },
    [`a, abbr, acronym, address, big, button, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
     html, body, div, span, applet, object, iframe, main,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,

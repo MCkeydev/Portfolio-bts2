@@ -51,12 +51,13 @@ const cssStyles = {
             lineHeight: 1.167,
             letterSpacing: '0em',
         },
-        h2: {
-            fontWeight: 300,
-            fontSize: '3.75rem',
-            lineHeight: 1.2,
-            letterSpacing: '-0.00833em',
-        },
+        h2: (theme: Theme) => css({
+            color: theme.palette.text.secondary,
+            fontWeight: 700,
+            fontSize: '2.5rem',
+            lineHeight: 1.167,
+            letterSpacing: '0',
+        }),
         h1: (theme: Theme) => css({
             color: theme.palette.text.secondary,
             fontWeight: 900,
