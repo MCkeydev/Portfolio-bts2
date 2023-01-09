@@ -77,7 +77,7 @@ const Presentation: React.FC = () => {
 							'alignSelf': 'flex-start',
 							'marginTop': 16,
 							'padding': '16px 16px',
-							'transition': 'all .15s ease-in-out',
+							'transition': 'background-color .15s ease-in-out',
 							'cursor': 'pointer',
 
 							'&:hover': {

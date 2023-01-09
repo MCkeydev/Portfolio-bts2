@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
 				<Navlink destination='accueil' />
 				<Navlink destination='Formation' />
 				<Navlink destination='projets' />
-				<Navlink destination='structure' />
+				<Navlink destination='Veille' />
 				<Navlink destination='contact' />
 			</div>
 		</div>
