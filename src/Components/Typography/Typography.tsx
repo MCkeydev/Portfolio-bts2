@@ -9,7 +9,7 @@ interface ITypographyProps {
     align?: TTypographyAlign,
     noWrap?: boolean,
     variant?: TTypographyVariants,
-    component?: ElementType<any>,
+    component?: ElementType<any>|undefined,
     gutterBottom?: boolean,
     onClick?: (event: MouseEvent) => void,
 };

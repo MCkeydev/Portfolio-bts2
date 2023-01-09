@@ -30,7 +30,7 @@ const Observer: React.FC<IObserverProps&React.PropsWithChildren> = (props) => {
                     { 
                         y: 0, opacity: 1,
                         duration: 0.75,
-                        stagger: 0.65,
+                        stagger: 0.35,
                         ease: 'Power3.easeOut',
                         ...props.animation,
                     }
@@ -41,7 +41,7 @@ const Observer: React.FC<IObserverProps&React.PropsWithChildren> = (props) => {
     };
 
     // Use of react useRef
-    const observerRef = React.useRef(new IntersectionObserver( observerCallback , { threshold: 1, root: null, rootMargin: '0px', }));
+    const observerRef = React.useRef(new IntersectionObserver( observerCallback , { threshold: 0.1, root: null, rootMargin: '0px', }));
     const classKey = React.useRef<string>(Tools.randomString());
     // First render effect that observes all children.
     React.useEffect(() => {

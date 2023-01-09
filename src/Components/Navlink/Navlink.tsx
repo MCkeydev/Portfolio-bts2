@@ -15,7 +15,7 @@ const Navlink: React.FC<{ destination: string }> = ({ destination }) => {
   React.useEffect(() => {
 
     // We check wether the current location matches the navlink.
-    location.pathname.replace("/", "").replaceAll("+", " ") === destination
+    location.pathname.replace("/", "").replaceAll("+", " ").includes(destination) 
       ? setIsActive(true)
       : setIsActive(false);
   }, [location.pathname, destination]);
