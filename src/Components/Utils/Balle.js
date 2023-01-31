@@ -1,6 +1,4 @@
-import { MutableRefObject } from 'react';
-
-function testBalle(balleRef: MutableRefObject<HTMLImageElement>) {
+function testBalle(balleRef) {
 	let mouvement = () => console.log('hello');
 	if (window.matchMedia('(max-width: 1000px)').matches) {
 		let balle = balleRef; // Récupère l'ID balle dans la variable balle
