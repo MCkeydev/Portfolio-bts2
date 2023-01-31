@@ -7,6 +7,13 @@ const cssStyles = {
 		'maxHeight': '596px',
 		'height': '596px',
 		'padding': 32,
+		'textDecoration': 'none',
+
+		'&:hover': {
+			img: {
+				transform: 'scale(1.1)',
+			},
+		},
 
 		'&:before': {
 			position: 'absolute',
@@ -28,6 +35,7 @@ const cssStyles = {
 		height: '100%',
 		objectFit: 'cover',
 		zIndex: -2,
+		transition: 'transform 0.2s ease-in-out',
 	},
 };
 

@@ -4,8 +4,13 @@ import cssStyles from './Projets.css';
 import projetsData from '../../../data/projets';
 import ProjectCard from '../../ProjectCard/ProjectCard';
 import Observer from '../../Observer/Observer';
+import SmallNav from '../../SmallNav/SmallNav';
+import { useNavigate } from 'react-router-dom';
 
 const Projets: React.FC = (props) => {
+	const [active, setActive] = React.useState(projetsData[0]);
+	const navigate = useNavigate();
+
 	return (
 		<div css={cssStyles.container}>
 			<Typography
@@ -14,8 +19,14 @@ const Projets: React.FC = (props) => {
 			>
 				Mes Projets
 			</Typography>
-			<Observer>
-				{projetsData.projets.map((projet) => (
+			<SmallNav
+				active={active.name}
+				setActive={setActive}
+				links={projetsData}
+				css={{ paddingBottom: 16 }}
+			/>
+			{active.items.map((projet) => (
+				<Observer>
 					<ProjectCard
 						name={projet.name}
 						description={projet.description}
@@ -23,8 +34,8 @@ const Projets: React.FC = (props) => {
 						thumbnail={projet.thumbnail}
 						stack={projet.tags}
 					/>
-				))}
-			</Observer>
+				</Observer>
+			))}
 		</div>
 	);
 };

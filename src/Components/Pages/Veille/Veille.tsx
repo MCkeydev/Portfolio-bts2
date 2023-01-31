@@ -4,7 +4,7 @@ import Observer from '../../Observer/Observer';
 import BigPost from '../../Posts/BigPost';
 import cssStyles from './Veille.css';
 import SmallPost from '../../Posts/SmallPost';
-
+import veilleData from '../../../data/veille';
 const Veille: React.FC = () => {
 	return (
 		<div css={cssStyles.container}>
@@ -26,23 +26,30 @@ const Veille: React.FC = () => {
 					variant='body1'
 					gutterBottom
 				>
-					{`En tant que développeur, j'ai eu l'occasion d'utiliser des`}{' '}
+					{`En tant que développeur, j'ai eu l'occasion d'utiliser des`}
 					<Typography
 						component={'span'}
 						css={{ fontWeight: 700 }}
 					>
-						{' '}
-						Intelligences Artificielles{' '}
-					</Typography>{' '}
+						Intelligences Artificielles
+					</Typography>
 					{`en milieu professionnel. Ces Outils sont de plus en plus répandus, et risquent d'avoir un impact énorme sur notre société. C'est pourquoi il est important d'effectuer une veille afin de pouvoir s'adapter aux changements que les IA risquent d'engranger.`}
 				</Typography>
-				<div css={{ display: 'flex', paddingTop: 32 }}>
-					<BigPost />
-					<div css={{ display: 'flex' }}>
-						<SmallPost />
-						<SmallPost />
-						<SmallPost />
-						<SmallPost />
+				<div
+					css={{ display: 'flex', paddingTop: 32, columnGap: '32px' }}
+				>
+					<BigPost data={veilleData[0]} />
+					<div
+						css={{
+							display: 'flex',
+							maxWidth: '45%',
+							flex: '0 0 45%',
+							flexWrap: 'wrap',
+						}}
+					>
+						{veilleData.slice(1, -1).map((post) => (
+							<SmallPost data={post} />
+						))}
 					</div>
 				</div>
 			</Observer>

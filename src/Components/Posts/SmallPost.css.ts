@@ -1,8 +1,23 @@
+import { css } from '@emotion/react';
+
 const cssStyles = {
+	container: {
+		flex: '0 0 50%',
+		paddingLeft: '8px',
+		paddingRight: '8px',
+		cursor: 'pointer',
+		textDecoration: 'none',
+	},
 	imageContainer: {
 		'position': 'relative',
 		'overflow': 'hidden',
 		'borderRadius': '12px',
+
+		'&:hover': {
+			img: {
+				transform: 'scale(1.1)',
+			},
+		},
 
 		'&:before': {
 			position: 'absolute',
@@ -16,10 +31,15 @@ const cssStyles = {
 			zIndex: -1,
 		},
 	},
-	thumbnail: {
+	thumbnail: css({
+		position: 'relative',
+		width: '100%',
+		height: '250px',
 		objectFit: 'cover',
+		verticalAlign: 'bottom',
 		zIndex: -2,
-	},
+		transition: 'transform 0.2s ease-in-out',
+	}),
 };
 
 export default cssStyles;

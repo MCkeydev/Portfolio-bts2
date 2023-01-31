@@ -6,11 +6,12 @@ import SmallNav from '../SmallNav/SmallNav';
 import TextChip from '../TextChip/TextChip';
 import Typography from '../Typography/Typography';
 
-const Competence: React.FC<IClassNameProp> = (props) => {
+const Competence: React.FC<IClassNameProp> = () => {
 	// use of React hooks
 	const [active, setActive] = React.useState<typeof compData.categories[0]>(
 		compData.categories[0],
 	);
+
 	return (
 		<>
 			<Typography
