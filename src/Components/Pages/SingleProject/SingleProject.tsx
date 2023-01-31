@@ -101,6 +101,7 @@ const SingleProject: React.FC = () => {
 						<div css={{ display: 'flex', columnGap: 32 }}>
 							<a
 								href={currentProject.githublink}
+								target='_blank'
 								id='depot'
 								data-tooltip-content='Dépôt Github'
 							>
@@ -108,6 +109,7 @@ const SingleProject: React.FC = () => {
 							</a>
 							<a
 								href={currentProject.cahierCharge}
+								target='_blank'
 								id='dossier'
 								data-tooltip-content='Dossier Documentaire'
 							>
@@ -116,6 +118,7 @@ const SingleProject: React.FC = () => {
 							{currentProject.hosted && (
 								<a
 									href={currentProject.hosted}
+									target='_blank'
 									id='lien'
 									data-tooltip-content="Voir l'application en direct"
 								>

@@ -53,7 +53,7 @@ export const compData = {
 				{
 					name: 'React',
 					description:
-						"Version typée du langage de programmation web JavaScript. Utilisé par les plus grandes entreprises du monde pour produire de code de qualité industrielle, il s'agit d'un indispensable pour tout développeur web moderne.",
+						"Développé par Facebook au début des années 2010, React s'est imposé comme le framework/library l plus influent du marché. Il s'agit d'un incontournable pour tout développeur web ayant des volonté d'évoluer du côté client d'une application.",
 					asset: '/svg/react.svg',
 					level: "Très à  l'aise",
 					color: 'success',
@@ -61,7 +61,7 @@ export const compData = {
 				{
 					name: 'Symfony',
 					description:
-						"Version typée du langage de programmation web JavaScript. Utilisé par les plus grandes entreprises du monde pour produire de code de qualité industrielle, il s'agit d'un indispensable pour tout développeur web moderne.",
+						"Framework PHP permettant d'éviter l'écriture de code utilitaire répétitif ralentissant le développement d'une application. Ce dernier offre une structure précise au projet, ainsi qu'une multitude de fonctionnalitées, allant de la cybersécurité à la persistance de données.",
 					asset: '/svg/symfony.png',
 					level: "Très à  l'aise",
 					color: 'success',
@@ -69,7 +69,7 @@ export const compData = {
 				{
 					name: 'Framework .NET',
 					description:
-						"Version typée du langage de programmation web JavaScript. Utilisé par les plus grandes entreprises du monde pour produire de code de qualité industrielle, il s'agit d'un indispensable pour tout développeur web moderne.",
+						"Plateforme développée par Microsoft, et disponible sur tous les postes Windows. Ce framework offre un très large éventail de fonctionnalités, permettant d'intéragir avec quasiment tous les aspects d'un système windows et plus encore. On va le retrouver notamment dans le langage de programmation C# et le langage de scripting Powershell.",
 					asset: '/svg/net.png',
 					level: 'Débutant',
 					color: 'error',
@@ -83,7 +83,7 @@ export const compData = {
 				{
 					name: 'Docker',
 					description:
-						"Version typée du langage de programmation web JavaScript. Utilisé par les plus grandes entreprises du monde pour produire de code de qualité industrielle, il s'agit d'un indispensable pour tout développeur web moderne.",
+						"Véritable révolution dans le milieu, docker permet de virtualiser des machines sous la forme de container qui peuvent s'emboîter. Très intéressant en développement, car il permet de mettre en place des environnements facilemen (base de données, serveurs webs).",
 					asset: '/svg/docker.svg',
 					level: 'Intermédiaire',
 					color: 'warning',
@@ -91,13 +91,34 @@ export const compData = {
 				{
 					name: 'VirtualBox',
 					description:
-						"Version typée du langage de programmation web JavaScript. Utilisé par les plus grandes entreprises du monde pour produire de code de qualité industrielle, il s'agit d'un indispensable pour tout développeur web moderne.",
+						"Mastodonte du milieu de la virtualisation, il m'a été donné de l'utiliser à de nombreuses reprises au cours de ma formation, afin de simuler différents environnements techniques.",
 					asset: '/svg/virtualbox.png',
 					level: 'Intermédiaire',
 					color: 'warning',
 				},
 			],
 		},
-		{ name: 'Administration Système' },
+		{
+			name: 'Administration Système et Réseau',
+			description: `Il s'agit de tous les outils et logiciel que j'ai pu utiliser dans le cadre de l'administration système et réseau.`,
+			items: [
+				{
+					name: 'Powershell',
+					description:
+						"Langage shell propriétaire de Microsoft. Ce dernier permet d'administrer tous les aspects d'un poste windows.",
+					asset: '/svg/powershell.svg',
+					level: 'Intermédiaire',
+					color: 'warning',
+				},
+				{
+					name: 'Cisco Packet Tracer',
+					description:
+						"Logiciel édité par l'entreprise Cisco, il permet de visualiser de manière réaliste toute sorte d'interface réseau. C'est l'outil parfait pour l'apprentissage de l'administration système et réseau.",
+					asset: '/svg/cisco.png',
+					level: 'Débutant',
+					color: 'error',
+				},
+			],
+		},
 	],
 };

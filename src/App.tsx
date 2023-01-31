@@ -14,10 +14,13 @@ import __reset from './styles/__reset.css';
 import cssStyles from './App.css';
 import './App.css';
 import Veille from './Components/Pages/Veille/Veille';
+import Footer from './Components/Footer/Footer';
+import testBalle from './Components/Utils/Balle';
 
 function App() {
 	const isDarkTheme = useAppStore((state) => state.isDarkTheme);
 	const [isMaillet, setIsMaillet] = React.useState<boolean>(false);
+	const balleRef = React.useRef<HTMLImageElement>(null);
 
 	React.useEffect(() => {
 		let code: string = '';
@@ -27,17 +30,28 @@ function App() {
 				if (code === 'maillet') {
 					setIsMaillet(true);
 				}
+				if (code.includes('stop')) {
+					setIsMaillet(false);
+				}
 				code = code.slice(1);
 			}
 		});
 	}, []);
 
+	React.useEffect(() => {
+		if (isMaillet && balleRef.current !== null) {
+			testBalle(balleRef.current);
+		}
+	}, [isMaillet, balleRef.current]);
+
 	return (
 		<div css={[cssStyles.app, isMaillet && cssStyles.maillet]}>
 			{isMaillet && (
 				<img
+					id='nyan'
 					css={cssStyles.nyan}
 					src='/images/maillet.gif'
+					ref={balleRef}
 				></img>
 			)}
 			<ThemeProvider
@@ -75,6 +89,7 @@ function App() {
 						element={<Veille />}
 					/>
 				</Routes>
+				<Footer />
 			</ThemeProvider>
 		</div>
 	);

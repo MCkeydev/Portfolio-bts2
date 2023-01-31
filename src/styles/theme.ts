@@ -58,6 +58,7 @@ const defaultTheme: Theme = {
 			contrast: 'white',
 		},
 		divider: 'rgba(0, 0, 0, 0.08)',
+		footer: '#3a3a3a',
 	},
 };
 
@@ -82,6 +83,7 @@ export const darkTheme = {
 			contrast: 'grey',
 		},
 		divider: 'rgba(255, 255, 255, 0.08)',
+		footer: '#3a3a3a',
 	},
 };
 

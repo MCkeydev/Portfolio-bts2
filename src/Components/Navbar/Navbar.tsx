@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
 				<Navlink destination='Formation' />
 				<Navlink destination='projets' />
 				<Navlink destination='Veille' />
-				<Navlink destination='contact' />
+				{/* <Navlink destination='contact' /> */}
 			</div>
 		</div>
 	);
