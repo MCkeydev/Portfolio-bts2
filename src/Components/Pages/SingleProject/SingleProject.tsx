@@ -7,7 +7,8 @@ import Tools from '../../Utils/Tools';
 import Observer from '../../Observer/Observer';
 import BoxLink from '../../BoxLink/BoxLink';
 import { FiGithub } from 'react-icons/fi';
-import { BiDownload } from 'react-icons/bi';
+import { FaFigma } from 'react-icons/fa';
+import { MdOutlineDocumentScanner } from 'react-icons/md';
 import { AiOutlineCloud } from 'react-icons/ai';
 import { Tooltip } from 'react-tooltip';
 import 'react-tooltip/dist/react-tooltip.css';
@@ -87,10 +88,23 @@ const SingleProject: React.FC = () => {
 						</Typography>
 						<div css={{ display: 'flex', columnGap: 40 }}>
 							{currentProject.stack?.map((technology) => (
-								<img
-									src={technology.icon}
-									css={{ width: 80, height: 80 }}
-								/>
+								<React.Fragment>
+									<img
+										src={technology.icon}
+										css={{
+											width: 80,
+											height: 80,
+											cursor: 'pointer',
+										}}
+										id={technology.name}
+										data-tooltip-content={technology.name}
+									/>
+									<Tooltip
+										css={{ marginTop: 8 }}
+										anchorId={technology.name}
+										place='bottom'
+									/>
+								</React.Fragment>
 							))}
 						</div>
 						<Typography variant='h2'>{'Résumé'}</Typography>
@@ -99,27 +113,43 @@ const SingleProject: React.FC = () => {
 						</Typography>
 						<Typography variant='h2'>{'Liens Utiles'}</Typography>
 						<div css={{ display: 'flex', columnGap: 32 }}>
-							<a
-								href={currentProject.githublink}
-								target='_blank'
-								id='depot'
-								data-tooltip-content='Dépôt Github'
-							>
-								<BoxLink>{<FiGithub />}</BoxLink>
-							</a>
-							<a
-								href={currentProject.cahierCharge}
-								target='_blank'
-								id='dossier'
-								data-tooltip-content='Dossier Documentaire'
-							>
-								<BoxLink>{<BiDownload />}</BoxLink>
-							</a>
+							{currentProject.githublink && (
+								<a
+									href={currentProject.githublink}
+									target='_blank'
+									id='depot'
+									data-tooltip-content='Dépôt Github'
+								>
+									<BoxLink>{<FiGithub />}</BoxLink>
+								</a>
+							)}
+							{currentProject.cahierCharge && (
+								<a
+									href={currentProject.cahierCharge}
+									target='_blank'
+									id='dossier'
+									data-tooltip-content='Dossier Documentaire'
+								>
+									<BoxLink>
+										{<MdOutlineDocumentScanner />}
+									</BoxLink>
+								</a>
+							)}
+							{currentProject.figma && (
+								<a
+									href={currentProject.figma}
+									target='_blank'
+									id='figma'
+									data-tooltip-content="Visualiser la maquette de l'application"
+								>
+									<BoxLink>{<FaFigma />}</BoxLink>
+								</a>
+							)}
 							{currentProject.hosted && (
 								<a
 									href={currentProject.hosted}
 									target='_blank'
-									id='lien'
+									id='hosted'
 									data-tooltip-content="Voir l'application en direct"
 								>
 									<BoxLink>{<AiOutlineCloud />}</BoxLink>
@@ -140,7 +170,12 @@ const SingleProject: React.FC = () => {
 				/>
 				<Tooltip
 					className='placeholder'
-					anchorId='lien'
+					anchorId='hosted'
+					place='bottom'
+				/>
+				<Tooltip
+					className='placeholder'
+					anchorId='figma'
 					place='bottom'
 				/>
 			</>

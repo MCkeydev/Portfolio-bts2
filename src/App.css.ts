@@ -12,6 +12,7 @@ const moveX = keyframes({
 	from: { left: 0 },
 	to: { left: 'calc(100vw - 272px)' },
 });
+
 const moveY = keyframes({
 	from: { top: 0 },
 	to: { top: '3200px' },

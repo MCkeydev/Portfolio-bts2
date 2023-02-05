@@ -22,7 +22,7 @@ const SmallPost: React.FC<ISmallPost> = (props) => {
 						css={cssStyles.thumbnail}
 					/>
 				</div>
-				<Typography variant='h6'>{props.data.title}</Typography>
+				<Typography variant='body1'>{props.data.title}</Typography>
 			</a>
 		</>
 	);

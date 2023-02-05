@@ -27,8 +27,10 @@ const Competence: React.FC<IClassNameProp> = () => {
 				variant='h6'
 				gutterBottom
 			>
-				{`Vous pourrez ici trouver toutes mes compétences accumulés au cours de ma formation, et de mes expériences professionnelles,
-												classées par catégories.`}
+				{`Vous pourrez ici trouver toutes mes compétences accumulées au cours de ma formation, de mes expériences professionnelles, et de mes expériences personnelles classées par catégories.
+				J'ai commencé la programmation par le JavaScript, et utilise depuis surtout du TypeScript et PHP (en tandem avec des frameworks comme React ou Symfony).
+												
+												`}
 			</Typography>
 			<SmallNav
 				active={active.name}

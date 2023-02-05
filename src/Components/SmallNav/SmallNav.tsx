@@ -11,7 +11,6 @@ interface ISmallNavProps {
 
 const SmallNav: React.FC<ISmallNavProps & IClassNameProp> = (props) => {
 	// By default, the first category is selected.
-
 	return (
 		<nav
 			css={cssStyles.container}
@@ -24,7 +23,10 @@ const SmallNav: React.FC<ISmallNavProps & IClassNameProp> = (props) => {
 						cssStyles.link,
 						category.name === props.active && cssStyles.linkActive,
 					]}
-					onClick={() => props.setActive(category)}
+					onClick={() => {
+						props.setActive(category);
+						localStorage.setItem('projectCategory', category.name);
+					}}
 				>
 					{category.name}
 				</Typography>

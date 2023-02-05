@@ -26,14 +26,14 @@ const Veille: React.FC = () => {
 					variant='body1'
 					gutterBottom
 				>
-					{`En tant que développeur, j'ai eu l'occasion d'utiliser des`}
+					{`En tant que développeur, j'ai eu l'occasion d'utiliser des `}
 					<Typography
 						component={'span'}
 						css={{ fontWeight: 700 }}
 					>
 						Intelligences Artificielles
 					</Typography>
-					{`en milieu professionnel. Ces Outils sont de plus en plus répandus, et risquent d'avoir un impact énorme sur notre société. C'est pourquoi il est important d'effectuer une veille afin de pouvoir s'adapter aux changements que les IA risquent d'engranger.`}
+					{` en milieu professionnel. Ces Outils sont de plus en plus répandus, et risquent d'avoir un impact énorme sur notre société. C'est pourquoi il est important d'effectuer une veille afin de pouvoir s'adapter aux changements que les IA risquent d'engranger.`}
 				</Typography>
 				<div
 					css={{ display: 'flex', paddingTop: 32, columnGap: '32px' }}
@@ -47,7 +47,7 @@ const Veille: React.FC = () => {
 							flexWrap: 'wrap',
 						}}
 					>
-						{veilleData.slice(1, -1).map((post) => (
+						{veilleData.slice(1).map((post) => (
 							<SmallPost data={post} />
 						))}
 					</div>

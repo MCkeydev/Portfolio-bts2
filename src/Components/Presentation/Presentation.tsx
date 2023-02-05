@@ -50,8 +50,7 @@ const Presentation: React.FC = () => {
 								gutterBottom
 							>
 								{`Bonjour, je m'appelle Matthieu Courréjou, j'ai 23 ans et la programmation est l'une de mes passions !
-                            J'ai pour objectif d'évoluer professionnellement en tant que développeur web-full stack à la suite de mes études,
-
+                            J'ai pour objectif d'évoluer professionnellement en tant que développeur web-full stack à la suite de mes études.
                             `}
 							</Typography>
 						</div>
@@ -64,10 +63,10 @@ const Presentation: React.FC = () => {
 								Mon Parcours
 							</Typography>
 							<Typography variant='body1'>
-								{`Aujourd'hui, je suis en BTS SIO en alternance pour appronfondir mes connaissances sur l'informatique (pour être mieux préparé à de futures études) et acquérir de l'expérience professionnelle pour le futur.
+								{`Aujourd'hui, je suis en BTS SIO (Services Informatiques aux Organisations) en alternance pour approfondir mes connaissances en développement logiciel (pour être mieux préparé à de futures poursuites d'études) et acquérir de l'expérience professionnelle à travers de la formule en apprentissage.
 
                             Le BTS SIO se fait, comme tous les BTS, sur deux ans et propose deux spécialités : Solutions d'Infrastructure, Systèmes et Réseaux (SISR, typée réseau) et Solutions Logicielles et Applications Métiers (SLAM, typée développement).
-
+							Je me suis orienté vers cette dernière, vouant une appétence particulière au domaine du développement logiciel.
                             `}
 							</Typography>
 						</div>
