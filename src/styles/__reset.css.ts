@@ -37,6 +37,7 @@ const __reset = (theme: Theme) =>
 			outlineColor: 'transparent',
 		},
 		'#root': {
+			position: 'relative',
 			minHeight: '100vh',
 			transition: 'background-color .2s ease-in-out',
 		},
