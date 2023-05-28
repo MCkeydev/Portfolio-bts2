@@ -7,29 +7,29 @@ import Typography from '../Typography/Typography';
 import cssStyles from './HomePage.css';
 
 interface IHomepageProps {
-	color?: string | undefined;
+    color?: string | undefined;
 }
 
 const Homepage: React.FC<IHomepageProps & PropsWithChildren> = ({
-	children,
-	...props
+    children,
+    ...props
 }) => {
-	return (
-		<section
-			{...props}
-			css={[cssStyles.container, {}]}
-		>
-			<Typography
-				variant='h1'
-				css={{ paddingBottom: '32px' }}
-			>
-				Portfolio
-			</Typography>
-			<Presentation />
-			<Competence />
-			<Parcours />
-		</section>
-	);
+    return (
+        <section
+            {...props}
+            css={[cssStyles.container, {}]}
+        >
+            <Typography
+                variant='h1'
+                css={{ paddingBottom: '32px' }}
+            >
+                Portfolio
+            </Typography>
+            <Presentation />
+            <Parcours />
+            <Competence />
+        </section>
+    );
 };
 
 export default Homepage;
