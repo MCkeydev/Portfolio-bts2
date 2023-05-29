@@ -149,6 +149,17 @@ const SingleProject: React.FC = () => {
                         <Typography gutterBottom>
                             {currentProject.resume}
                         </Typography>
+                        {
+                            currentProject.docUtilisateur && (
+                                <>
+                                    <Typography variant='h2'>{'Documentation utilisateur'}</Typography>
+                                    <video controls >
+                                        <source src={currentProject.docUtilisateur} type="video/mp4"/>
+                                    </video>
+
+                                </>
+                            )
+                        }
                         <Typography variant='h2'>{'Liens Utiles'}</Typography>
                         <div css={{ display: 'flex', columnGap: 32 }}>
                             {currentProject.githublink && (

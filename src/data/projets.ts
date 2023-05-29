@@ -84,7 +84,7 @@ const projetsData = [
                 cahierCharge: '/downloads/glpi.pdf',
             },
             {
-                name: "Application d'évaluations (type moodle)",
+                name: "Quiz Dubois | Application d'évaluations (type moodle)",
                 description:
                     'Client web et API permettant à des professeurs de créer des quiz, et de noter les élèves..',
                 path: 'quiz',
@@ -99,12 +99,13 @@ const projetsData = [
                 ],
                 thumbnail: '/images/quiz.png',
                 tags: 'REACT, SYMFONY, MYSQL',
-                resume: `Dans le cadre d'un TP de la matière du bloc 1 "Support et mise à disposition de services informatiques", il nous a été demandé d'écrire un script shell permettant le déploiement complet de la solution de ticketing open source GLPI sur un environnement debian.
+                resume: `Dans le cadre du second atelier de professionnalisation de ma deuxième année de BTS SIO 2, j'ai été chargé de développer une application web pour le centre de formation Dubois. Ce projet fictif est accompagné d'un cahier des charges complet fourni par mes enseignants (voir bas de page). Pour répondre à ces besoins, j'ai commencé par créer le modèle conceptuel de données, puis j'ai procédé à l'architecture de l'application.
 
-                Une fois le script fait, il fallait créer de multiples utilisateurs et techniciens, ainsi que créer et résoudre différents tickets de manière professionnelle, en proposant des solutions cohérentes et fonctionnelles.
-				
+L'application se compose d'une interface client développée en TypeScript (React), ainsi que d'une API serveur en PHP 8.1 (Symfony). Toutes les instructions d'installation sont disponibles dans le dossier documentaire téléchargeable ci-dessous, où vous trouverez également une description détaillée de la conception de l'application. Une documentation technique et une documentation utilisateur sont également incluses pour faciliter son utilisation.
             `,
-                cahierCharge: '/downloads/glpi.pdf',
+                docUtilisateur: '/video/dubois_util.mkv',
+                githublink: 'https://github.com/MCkeydev/quiz',
+                cahierCharge: '/downloads/Dubois_documentation.zip',
             },
         ],
     },
