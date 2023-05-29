@@ -8,7 +8,7 @@ import Observer from '../../Observer/Observer';
 import BoxLink from '../../BoxLink/BoxLink';
 import { FiGithub } from 'react-icons/fi';
 import { FaFigma } from 'react-icons/fa';
-import { MdDownload, MdOutlineDocumentScanner } from 'react-icons/md';
+import {MdDownload, MdOutlineDocumentScanner, MdOutlineSchool} from 'react-icons/md';
 import { AiOutlineCloud } from 'react-icons/ai';
 import { Tooltip } from 'react-tooltip';
 import 'react-tooltip/dist/react-tooltip.css';
@@ -16,6 +16,7 @@ import Modal from '../../Modal/Modal';
 import Button from '../../Button/Button';
 import { BiDownload } from 'react-icons/bi';
 import { AnimatePresence } from 'framer-motion';
+import {BsGear, TbReport} from "react-icons/all";
 
 const SingleProject: React.FC = () => {
     const { projet } = useParams();
@@ -172,15 +173,62 @@ const SingleProject: React.FC = () => {
                                     <BoxLink>{<FiGithub />}</BoxLink>
                                 </a>
                             )}
+                            {currentProject.githublink2 && (
+                                <a
+                                    href={currentProject.githublink2}
+                                    target='_blank'
+                                    id='depot2'
+                                    data-tooltip-content='Second dépôt Github'
+                                >
+                                    <BoxLink>{<FiGithub />}</BoxLink>
+                                </a>
+                            )}
+
                             {currentProject.cahierCharge && (
                                 <a
                                     href={currentProject.cahierCharge}
                                     target='_blank'
                                     id='dossier'
-                                    data-tooltip-content='Dossier Documentaire'
+                                    data-tooltip-content='Cahier des charges'
                                 >
                                     <BoxLink>
                                         {<MdOutlineDocumentScanner />}
+                                    </BoxLink>
+                                </a>
+                            )}
+                            {currentProject.docTechnique && (
+                                <a
+                                    href={currentProject.docTechnique}
+                                    target='_blank'
+                                    id='docTechnique'
+                                    data-tooltip-content='Documentation technique'
+                                >
+                                    <BoxLink>
+                                        {<BsGear />}
+                                    </BoxLink>
+                                </a>
+                            )}
+                            {currentProject.rapportActivite && (
+                                <a
+                                    href={currentProject.rapportActivite}
+                                    target='_blank'
+                                    id='rapportActivite'
+                                    data-tooltip-content="Rapport d'activité"
+                                >
+                                    <BoxLink>
+                                        {<TbReport />}
+                                    </BoxLink>
+                                </a>
+                            )}
+                            {currentProject.ficheProjet && (
+                                <a
+                                    href={currentProject.ficheProjet}
+                                    target='_blank'
+                                    id='ficheProjet'
+                                    data-tooltip-content="Fiche projet Epreuve E5"
+                                >
+                                    <BoxLink>
+                                        {<MdOutlineSchool />}
                                     </BoxLink>
                                 </a>
                             )}
@@ -224,12 +272,32 @@ const SingleProject: React.FC = () => {
                 />
                 <Tooltip
                     className='placeholder'
+                    anchorId='depot2'
+                    place='bottom'
+                />
+                <Tooltip
+                    className='placeholder'
                     anchorId='download'
                     place='bottom'
                 />
                 <Tooltip
                     className='placeholder'
                     anchorId='dossier'
+                    place='bottom'
+                />
+                <Tooltip
+                    className='placeholder'
+                    anchorId='docTechnique'
+                    place='bottom'
+                />
+                <Tooltip
+                    className='placeholder'
+                    anchorId='rapportActivite'
+                    place='bottom'
+                />
+                <Tooltip
+                    className='placeholder'
+                    anchorId='ficheProjet'
                     place='bottom'
                 />
                 <Tooltip

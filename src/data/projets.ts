@@ -103,9 +103,13 @@ const projetsData = [
 
 L'application se compose d'une interface client développée en TypeScript (React), ainsi que d'une API serveur en PHP 8.1 (Symfony). Toutes les instructions d'installation sont disponibles dans le dossier documentaire téléchargeable ci-dessous, où vous trouverez également une description détaillée de la conception de l'application. Une documentation technique et une documentation utilisateur sont également incluses pour faciliter son utilisation.
             `,
-                docUtilisateur: '/video/dubois_util.mkv',
-                githublink: 'https://github.com/MCkeydev/quiz',
-                cahierCharge: '/downloads/Dubois_documentation.zip',
+                docUtilisateur: '/video/dubois_util.mp4',
+                docTechnique: 'https://quiz-doc.netlify.app/',
+                githublink: 'https://github.com/MCkeydev/dubois-quiz-back',
+                githublink2: 'https://github.com/MCkeydev/dubois-quiz-front',
+                cahierCharge: '/downloads/dubois-cahier-charge.pdf',
+                rapportActivite: '/downloads/dubois-RA.pdf',
+                ficheProjet: '/downloads/dubois-E5.pdf',
             },
         ],
     },
