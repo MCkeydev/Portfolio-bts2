@@ -50,18 +50,25 @@ const projetsData = [
                 ],
                 thumbnail: '/images/ticketio.png',
                 tags: 'SYMFONY, TWIG, HTML, CSS',
-                resume: `Dans le cadre de mon premier projet d'option développement de deuxième année de BTS SIO, j'ai été chargé de réaliser une application de gestion de tickets. Mon binôme et moi avons choisi d'utiliser le framework PHP Symfony, car nous nous sentions les plus à l'aise avec ce dernier.
+                resume: `
+Dans le cadre de mon premier projet d'option développement de deuxième année de BTS SIO, j'ai été chargé de réaliser une application de gestion de tickets. Mon binôme et moi avons choisi d'utiliser le framework PHP Symfony, car nous nous sentions le plus à l'aise avec ce dernier.
 
-				Dans un premier temps, au cours de la phase de maquettage, nous avons élaboré un plan détaillé de l'application, en déterminant les fonctionnalités nécessaires pour satisfaire les besoins de l'utilisateur (en concordance avec les fonctionnalités attendues dans le cahier des charges donné par les formateurs). Nous avons aussi créé des maquettes graphiques pour visualiser les différentes vues de l'application.
+Dans un premier temps, lors de la phase de maquettage, nous avons élaboré un plan détaillé de l'application, en déterminant les fonctionnalités nécessaires pour répondre aux besoins de l'utilisateur (en accord avec les fonctionnalités attendues dans le cahier des charges fourni par les formateurs). Nous avons également créé des maquettes graphiques afin de visualiser les différentes vues de l'application.
 
-				Pendant la phase de développement basée sur des User Stories, nous avons commencé à développer les fonctionnalités de l'application en utilisant les cas d’utilisation du cahier des charges pour guider notre travail. Par exemple, nous avons créé une fonctionnalité qui permet à un opérateur de créer un ticket d'incident informatique pour un client, et de l'assigner à un service de techniciens. 
-				Une fois les fonctionnalités attendues implémentées et testées, nous avons réalisé un dossier documentaire récapitulatif de la mise en place et du développement du projet. 
+Pendant la phase de développement, basée sur des User Stories, nous avons commencé à implémenter les fonctionnalités de l'application en utilisant les cas d'utilisation du cahier des charges comme guide pour notre travail. Par exemple, nous avons créé une fonctionnalité qui permet à un opérateur de créer un ticket d'incident informatique pour un client et de l'assigner à un service de techniciens.
+Une fois que les fonctionnalités attendues ont été implémentées et testées, nous avons réalisé une documentation complète récapitulant la mise en place et le développement du projet.
 
-				Pour conclure, ce projet représente une grosse montée en compétence pour moi et mon binôme, que ce soit en matière de développement web, ou en gestion de projet.
+Il convient de noter que nous avons fourni à la fois une documentation technique et une documentation utilisateur. La documentation utilisateur est disponible sous forme de vidéos ainsi que de texte sur GitHub.
+
+En conclusion, ce projet représente une progression significative de nos compétences, que ce soit en développement web ou en gestion de projet, pour moi et mon binôme.
 				
             `,
                 githublink: 'https://github.com/MCkeydev/Ticket-IO',
-                cahierCharge: '/downloads/ticketio-dossier.pdf',
+                cahierCharge: '/downloads/ticketio-cahier-charge.pdf',
+                rapportActivite: '/downloads/ticketio-RA.pdf',
+                docTechnique: 'https://ticket-io-doc.netlify.app',
+                docUtilisateur: '/video/ticketio_util.mp4',
+                ficheProjet: '/downloads/ticketio-E5.pdf',
             },
             {
                 name: "Script d'installation GLPI",
