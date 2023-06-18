@@ -122,9 +122,9 @@ const SingleProject: React.FC = () => {
                                 </Modal>
                             )}
                         </AnimatePresence>
-                        <Typography variant='h2'>
+                        {currentProject.stack && (<Typography variant='h2'>
                             {'Pile applicative'}
-                        </Typography>
+                        </Typography>)}
                         <div css={{ display: 'flex', columnGap: 40 }}>
                             {currentProject.stack?.map((technology) => (
                                 <React.Fragment>
@@ -146,10 +146,15 @@ const SingleProject: React.FC = () => {
                                 </React.Fragment>
                             ))}
                         </div>
-                        <Typography variant='h2'>{'Résumé'}</Typography>
-                        <Typography gutterBottom>
+
+                        {currentProject.resume && (
+                            <>
+                            <Typography variant='h2'>{'Résumé'}</Typography>
+                            <Typography gutterBottom>
                             {currentProject.resume}
                         </Typography>
+                            </>
+                            )}
                         {
                             currentProject.docUtilisateur && (
                                 <>
