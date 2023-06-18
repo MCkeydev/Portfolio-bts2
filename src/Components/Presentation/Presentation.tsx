@@ -63,9 +63,9 @@ const Presentation: React.FC = () => {
 								Mon Parcours
 							</Typography>
 							<Typography variant='body1'>
-								{`Aujourd'hui, je suis en BTS SIO (Services Informatiques aux Organisations) en alternance pour approfondir mes connaissances en développement logiciel (pour être mieux préparé à de futures poursuites d'études) et acquérir de l'expérience professionnelle à travers de la formule en apprentissage.
+								{`Aujourd'hui, je suis en BTS SIO (Services Informatiques aux Organisations) en alternance pour approfondir mes connaissances en développement logiciel (pour être mieux préparé à de futures poursuites d'études) et acquérir de l'expérience professionnelle à travers la formule en apprentissage.
 
-                            Le BTS SIO se fait, comme tous les BTS, sur deux ans et propose deux spécialités : Solutions d'Infrastructure, Systèmes et Réseaux (SISR, typée réseau) et Solutions Logicielles et Applications Métiers (SLAM, typée développement).
+                            Le BTS SIO se fait, comme tous les BTS, sur deux ans et propose deux spécialités : Solutions d'Infrastructure, Systèmes et Réseaux (SISR, typée réseau) et Solutions Logicielles et Applications Métiers (SLAM, orientée développement).
 							Je me suis orienté vers cette dernière, vouant une appétence particulière au domaine du développement logiciel.
                             `}
 							</Typography>

@@ -23,7 +23,7 @@ const parcours = {
 		{
 			periode: 'Juillet 2022',
 			lieu: 'Linkweb, Boé (47550)',
-			description: `À la suite de mon stage, mon entreprise a souhaité poursuivre notre collaboration. Il m'a alors été proposé un CDD d'un mois.
+			description: `À la suite de mon stage, mon entreprise a souhaité poursuivre notre collaboration. Il m'a alors été proposé un CDD d'un mois,
 			aboutissant sur un contrat d'apprentissage.
 			
 			J'ai pu y réaliser : diverses tâches assignées au service développement de l'entreprise (React, Typescript, Symfony, Php).`,
